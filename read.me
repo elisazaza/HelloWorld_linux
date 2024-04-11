@@ -1,0 +1,20 @@
+#Instrucciones para compilar y ejecutar "Hola Mundo" en Linux
+
+Si no tienes el compilador de C/C++ instalado, puedes instalarlo utilizando el gestor de paquetes de tu distribución. 
+Desde la terminal ejecuta lo siguiente:
+sudo apt-get update
+sudo apt-get install build-essential
+
+coloca el comando nano helloworld.c e insterta el siguiente codigo
+#include <stdio.h>
+
+int main() {
+    printf("¡Hola Mundo!\n");
+    return 0;
+}
+
+Despues coloca el siguiente comando para crear compilar el archivo
+gcc helloworld.c -o helloworld
+
+ejecuta el programa con el comando ./helloworld
+y listo
